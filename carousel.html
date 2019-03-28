@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style type="text/css">
+		.row{
+			margin-bottom: 22px;
+		}
+		.imgs{
+				height: 350px;
+		}
+	</style>
+	<title>Carrossel de imagens</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<div  id="carouselControl" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselControl" data-slide-to="0" class="active">1</li>
+						<li data-target="#carouselControl" data-slide-to="1">2</li>
+						<li data-target="#carouselControl" data-slide-to="2">3</li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img class="d-block w-100 imgs" src="img/img1.jpg" alt="">
+							<div class="carousel-caption d-none d-md-block">
+								<h3>Primeiro</h3>
+								<p>Subtitulo</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100 imgs" src="img/img2.jpg" alt="">
+							<div class="carousel-caption d-none d-md-block">
+								<h3>Segundo</h3>
+								<p>Subtitulo</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+						<img class="d-block w-100 imgs" src="img/img3.jpg" alt="">
+							<div class="carousel-caption d-none d-md-block">
+								<h3>Terceiro</h3>
+								<p>Subtitulo</p>
+							</div>
+						</div>
+						<a href="#carouselControl" class="carousel-control-prev" role="button" data-slide="prev">
+							 <span class="carousel-control-prev-icon" aria-hiden="true"></span>
+							 <span class="sr-only">Voltar</span>
+						</a>
+						<a href="#carouselControl" class="carousel-control-next" role="button" data-slide="next">
+							 <span class="carousel-control-next-icon" aria-hiden="true"></span>
+							 <span class="sr-only">Avançar</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<script src="js/jquery/jquery-3.2.1.slim.min.js"></script>
+	<script src="js/popper/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$('.carousel').carousel({
+			interval:2000
+
+		});
+	</script>
+</body>
+</html>

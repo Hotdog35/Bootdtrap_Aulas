@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<title>ListGroup</title>
+	<style type="text/css">
+		.row{
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<ul class="list-group">
+					<li class="list-group-item">Item 1</li>
+					<li class="list-group-item active">Item 2</li>
+					<li class="list-group-item disabled">Item 3</li>
+					<li class="list-group-item">Item 4</li>
+					<li class="list-group-item">Item 5</li>
+					<li class="list-group-item">Item 6</li>
+				</ul>
+			</div>
+			<div class="col-4">
+				<div class="list-group">
+					<a href="#" class="list-group-item active">Item 1</a>
+					<a href="#" class="list-group-item list-group-item-action">Link 2</a>
+					<a href="#" class="list-group-item list-group-item-action">Link 3</a>
+					<a href="#" class="list-group-item list-group-item-action">Link 4</a>
+					<a href="#" class="list-group-item list-group-item-action">Link 5</a>
+					<a href="#" class="list-group-item list-group-item-action">Link 6</a>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="list-group">
+					<button type="button" class="list-group-item active list-group-item-action">Button 1</button>
+					<button type="button" class="list-group-item list-group-item-action">Button 2</button>
+					<button type="button" class="list-group-item list-group-item-action">Button 3</button>
+					<button type="button" class="list-group-item list-group-item-action">Button 4</button>
+					<button type="button" class="list-group-item list-group-item-action" disabled>Button 5</button>
+					<button type="button" class="list-group-item list-group-item-action">Button 6</button>
+			</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<div class="list-group">
+					<a href="#" class="list-group-item list-group-item-action active">
+						<div class="d-flex w-100 justify-content-between">
+							<h5>Titulo da Minha lista</h5>
+							<small>3 dias atrás</small>
+						</div>
+						<p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quia libero dolores sapiente eius enim nesciunt incidunt, quas veritatis numquam molestias delectus veniam illo accusantium architecto, quis mollitia asperiores fuga.</p>
+					</a>
+					<a href="#" class="list-group-item list-group-item-action">
+						<div class="d-flex w-100 justify-content-between">
+							<h5>Titulo da Minha lista</h5>
+							<small>3 dias atrás</small>
+						</div>
+						<p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quia libero dolores sapiente eius enim nesciunt incidunt, quas veritatis numquam molestias delectus veniam illo accusantium architecto, quis mollitia asperiores fuga.</p>
+					</a>
+					<a href="#" class="list-group-item list-group-item-action">
+						<div class="d-flex w-100 justify-content-between">
+							<h5>Titulo da Minha lista</h5>
+							<small>3 dias atrás</small>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quia libero dolores sapiente eius enim nesciunt incidunt, quas veritatis numquam molestias delectus veniam illo accusantium architecto, quis mollitia asperiores fuga.</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3">
+				<div class="list-group" id="list-tab" role="tablist">
+					<a href="#list-home" class="list-group-item list-group-item-action active" id="list-home-list"  data-toggle="list" role="tab" aria-control="home">HOME</a>
+					<a href="#list-perfil" class="list-group-item list-group-item-action" id="list-perfil-list"
+						data-toggle="list" role="tab" aria-control="perfil">Perfil</a>
+					<a href="#list-status" class="list-group-item list-group-item-action" id="list-status-list"
+						data-toggle="list" role="tab" aria-control="perfil">Status</a>
+					<a href="#list-contato" class="list-group-item list-group-item-action" id="list-contato-list"
+						data-toggle="list" role="tab" aria-control="perfil">Contato</a>
+				</div>
+			</div>
+			<div class="col-9">
+				<div class="tab-content" id="nav-tabContent">
+					<div id="list-home" class="tab-pane fade show active" role="tabpanel" aria-labelledby="list-home-list">
+						<h3>Home</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi voluptas aperiam praesentium at odio unde quisquam quae eos consequatur deleniti. Harum corrupti, voluptates aspernatur. Blanditiis at rerum nemo commodi maiores.</p>				
+					</div>
+					<div id="list-perfil" class="tab-pane fade" role="tabpanel" aria-labelledby="list-perfil-list">
+						<h3>Perfil</h3>
+						<p>States undertand a powerfull Immunity latencies, only beacuse my expecial form are preted, laborlel inisitence.</p>				
+					</div>
+					<div id="list-status" class="tab-pane fade" role="tabpanel" aria-labelledby="list-status-list">
+						<h3>Status</h3>
+						<p>lor	but must be a volved a let me in.</p>				
+					</div>
+					<div id="list-contato" class="tab-pane fade" role="tabpanel" aria-labelledby="list-contato-list">
+						<h3>Contato</h3>
+						<form>
+							<div class="form-group">
+								<label for="nome">Nome</label>
+								<input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu Nome">
+							</div>
+							<div class="form-group">
+								<label for="assusnto">Assunto</label>
+								<input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu Assunto">
+							</div>
+							<div class="form-group">
+								<label for="conteudo">Conteúdo</label>
+								<textarea id="conteudo" class="form-control" name="conteudo"></textarea>
+							</div>
+							<button class="btn btn-primary">Enviar</button>
+						</form>			
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery/jquery-3.2.1.slim.min.js"></script>
+	<script type="text/javascript" src="js/popper/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>	
+</body>
+</html>
